@@ -1,0 +1,17 @@
+- __tests__ ( All the testing files are present to test the app by using testing tools like jest)
+- .bundler (It mainly contains the configuration files)
+- android ( All the files required to build the android app and run it )
+	- build.gradel [Imp] -  This is one of the important file where you specify the  minimum sdk versions of the app and the dependencies that are required
+	- local.properties - Specify the SDK path on your system to built and run the app on your device or emulator
+- ios (All the files required to build the iOs app and run it)
+	- Podfile (Ruby File) - Contains the configuration regarding the iOs app the minimum version it supports and dependencies and a lot of lot of other configuration related to the app
+
+- node_modules - contains all the dependencies and the devdependencies which are required to run the app but this can be recreated by doing `npm i ` on the root dir of the app
+-  .watchmanconfig -  relodes your app and shows on the devices similer to `nodemon`
+- app.json - all the files are linkes android and iOs takes the name of the app from here
+- App.tsx -  All the importan thing goes here
+- babale.config.js - A bundler which combine all the files and make it into a single file - Metro Config of Babble is used in Recat Native to bundle everything.
+- index.js - All the integration of the app are done the start of the app it is 
+	- AppRegisrty convers the app into iOs and android 
+- metro.config.js - Contain the metro configurations it is a bundler that combine all the files into a single file
+https://stackoverflow.com/questions/20564514/adb-is-not-recognized-as-an-internal-or-external-command-operable-program-or

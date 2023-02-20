@@ -1,0 +1,4 @@
+- Setup Ready 
+- File Structure
+- Styling
+- light and dark Mode
