@@ -61,7 +61,7 @@ export default function ActionCard() {
       <Text style={styles.headingText}>Upcoming Videos</Text>
       <ScrollView horizontal style={styles.cardContainer} scrollEnabled={true}>
         {blogData.map((blog, i) => {
-          return <ActionSingleCard data={blog} key={i} />;
+          return <ActionSingleCard userName="AbirPal" data={blog} key={i} />;
         })}
       </ScrollView>
     </View>

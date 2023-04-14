@@ -17,10 +17,12 @@ type BlogData = {
     cardColor: string;
     textColor: string;
   };
+  userName : string;
 };
 
 export default function ActionSingleCard(props: BlogData) {
   const {heading, description, imageUrl, readMoreLink, cardColor, textColor} = props.data;
+  const author = props.userName
 
   function openWebsite(websiteLink: string) {
     Linking.openURL(websiteLink);
